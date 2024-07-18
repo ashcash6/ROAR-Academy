@@ -46,7 +46,7 @@ def grad(aa):
     grad_aa[1] = - np.ones(sample_count).dot(update_vector)
     return grad_aa
 
-aa = np.array([-4, 4])
+aa = np.array([4, -4])
 value = penalty(aa[0],aa[1])
 ax2.scatter(aa[0], aa[1], penalty(aa[0],aa[1]), c='b', s=100, marker='*')
 epsilon = 0.00001

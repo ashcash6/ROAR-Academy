@@ -63,8 +63,9 @@ testingX = samples[randomOrder[100:200], :]
 testingY = labels[randomOrder[100:200], :]
 
 model = Sequential()
-model.add(Dense(4, input_shape=(2,), activation='sigmoid', use_bias=True))
-# model.add(Dense(4, input_shape=(2,), activation='relu', use_bias=True))
+model.add(Dense(4, input_shape=(2,), activation='relu', use_bias=True))
+model.add(Dense(4, activation='relu', use_bias=True))
+
 model.add(Dense(2, activation='softmax' ))
 model.compile(loss='mean_squared_error', optimizer='sgd', metrics=['binary_accuracy'])
 

@@ -7,6 +7,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+def sigmoid(x):
+    return 1/(1+np.exp(-x))
+
+
+
 # generate a basic sample point array on x-axis
 x = np.arange(0,2*np.pi,0.1)
 
@@ -20,4 +25,10 @@ plt.plot(x, y1, 'b--', linewidth = 1)
 plt.ylim(-1, 1)
 plt.xlim(0,2*np.pi)
 plt.xticks(np.arange(0,2*np.pi,np.pi/4), ['0', 'pi/4', 'pi/2', '3pi/4', 'pi', '5pi/4', '3pi/2', '7pi/4'])
+
+#moving x and y axis
+ax2 = fig.add_subplot(1,3,2)
+
+
+
 plt.show()

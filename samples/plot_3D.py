@@ -1,4 +1,5 @@
-## This is course material for Introduction to Python Scientific Programming
+
+0## This is course material for Introduction to Python Scientific Programming
 ## Example code: plot_3D.py
 ## Author: Allen Y. Yang,  Intelligent Racing Inc.
 ##
